@@ -113,6 +113,12 @@ public class LocationView extends javax.swing.JFrame {
             }
         });
 
+        cmbCountry.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbCountryActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -279,6 +285,10 @@ public class LocationView extends javax.swing.JFrame {
         btnSimpan.setEnabled(true);
         btnHapus.setEnabled(true);
     }//GEN-LAST:event_tblLocationMouseClicked
+
+    private void cmbCountryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCountryActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbCountryActionPerformed
 
     /**
      * @param args the command line arguments
