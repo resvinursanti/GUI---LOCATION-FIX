@@ -60,6 +60,16 @@ public class Locations implements Serializable {
     public Locations() {
     }
 
+    public Locations(Short locationId, String streetAddress, String postalCode, String city, String stateProvince) {
+        this.locationId = locationId;
+        this.streetAddress = streetAddress;
+        this.postalCode = postalCode;
+        this.city = city;
+        this.stateProvince = stateProvince;
+    }
+    
+   
+
     public Locations(Short locationId, String streetAddress, String postalCode, String city, String stateProvince, Countries countryId) {
         this.locationId = locationId;
         this.streetAddress = streetAddress;

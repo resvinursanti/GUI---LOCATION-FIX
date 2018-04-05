@@ -57,10 +57,7 @@ public class CountriesController {
     public void bindingSearch(JTable table, String[] header, String category, String cari) {
 //        bindingTable(table, header, cDAO.search(category, cari)); {
         String search = cari;
-            if (category.equalsIgnoreCase("countryId")) {
-                Countries countries = (Countries) cDAO.search("countryName", cari).get(0);
-                search = countries.getCountryId().toString();
-            } else if (category.equalsIgnoreCase("regionId")) {
+         if (category.equalsIgnoreCase("regionId")) {
                 Regions r = (Regions) rDAO.search("regionName", cari).get(0);                
                 search = r.getRegionId().toString();
             }
